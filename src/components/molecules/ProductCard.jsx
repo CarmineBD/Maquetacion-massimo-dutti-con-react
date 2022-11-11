@@ -1,5 +1,7 @@
 // import Button from "../molecules/Button.jsx"
 import '../../style.css';
+import Button from '../atoms/Button.';
+import SelectSize from '../atoms/SelectSize';
 
 function ProductCard(props) {
     return (
@@ -19,15 +21,8 @@ function ProductCard(props) {
                         <p>
                             {props.description}
                         </p>
-                        <div class="select select-flat">
-                            <select>
-                                <option value="S">S</option>
-                                <option value="M">M</option>
-                                <option value="l">L</option>
-                                <option value="XL">XL</option>
-                            </select>
-                        </div>
-                        <button class="btn-primary btn--full">add to cart</button>
+                        <SelectSize></SelectSize>
+                        <Button content="Agregar a la cesta"></Button>
                     </div>
                 </div>
             </div>
